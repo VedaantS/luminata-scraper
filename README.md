@@ -9,4 +9,4 @@ Then, when `file.py` opens up in Visual Studio Code, edit the sender_email and s
 `sender_email = "vedaant@luminataprep.com"`
 `sender_password = "password123"`
 
-Then, ___.
+Then, run `python3 file.py` in Terminal. Everything should then send automatically.
