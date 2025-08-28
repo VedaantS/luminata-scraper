@@ -5,8 +5,8 @@ import email
 import smtplib
 from email.mime.text import MIMEText
 
-sender_email = "your_email@gmail.com"  # TODO: Replace with your email
-sender_password = "your_app_password"  # TODO: Replace with your app password
+sender_email = "aidan.daluiski@luminataprep.com"  # TODO: Replace with your email
+sender_password = "aidans_password"  # TODO: Replace with your app password
 
 beginning = 1
 end = 860
@@ -39,7 +39,7 @@ www.luminataprep.com
         msg['From'] = sender_email
         msg['To'] = address
         try:
-            with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
+            with smtplib.SMTP_SSL('smtp.zoho.com', 465) as server:
                 server.login(sender_email, sender_password)
                 server.sendmail(sender_email, address, msg.as_string())
             print(f"Email sent to {address}")
